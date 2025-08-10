@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Spaletti — Art for Your Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Allura&family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo-mark" id="logo-mark" aria-hidden="true">S</div>
+        <div class="brand-text">
+          <div class="brand-name">Spaletti</div>
+          <div class="brand-tag">Art for Your Home</div>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#shop">Shop</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <button id="cart-toggle" class="cart-btn">Cart (<span id="cart-count">0</span>)</button>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Curated pieces that make a house feel like home</h1>
+          <p>Timeless accents, artisan textures, and thoughtful design — handpicked for modern living.</p>
+          <a href="#shop" class="btn-primary">Shop New Arrivals</a>
+        </div>
+        <div class="hero-image">
+          <img src="https://picsum.photos/800/600?seed=spaletti-hero" alt="" />
+        </div>
+      </div>
+    </section>
+    <section id="shop" class="products section container">
+      <h2 class="section-title">Featured Products</h2>
+      <div id="product-grid" class="product-grid"></div>
+    </section>
+    <section id="about" class="about section container">
+      <h2 class="section-title">About Spaletti</h2>
+      <p>Inspired by European elegance and modern comfort, Spaletti brings textured, timeless decor to your living spaces. Each piece is selected for craftsmanship and enduring style.</p>
+    </section>
+    <section id="contact" class="contact section container">
+      <h2 class="section-title">Contact</h2>
+      <p>Questions about an item or need styling help? Send us a note.</p>
+      <form id="contact-form" class="contact-form">
+        <input type="text" name="name" placeholder="Your name" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <textarea name="message" rows="4" placeholder="Message"></textarea>
+        <button type="submit" class="btn-secondary">Send</button>
+      </form>
+    </section>
+  </main>
+  <aside id="cart-drawer" class="cart-drawer" aria-hidden="true">
+    <div class="cart-head">
+      <h3>Your Cart</h3>
+      <button id="cart-close" aria-label="Close cart">✕</button>
+    </div>
+    <div id="cart-items" class="cart-items"></div>
+    <div class="cart-footer">
+      <div class="cart-totals">
+        <div>Subtotal</div>
+        <div id="cart-subtotal">$0.00</div>
+      </div>
+      <button id="checkout-btn" class="btn-primary">Checkout</button>
+      <div class="small">Demo checkout — replace with Stripe/Shopify integration.</div>
+    </div>
+  </aside>
+  <div id="product-modal" class="modal" aria-hidden="true">
+    <div class="modal-inner">
+      <button id="modal-close" class="modal-close" aria-label="Close">✕</button>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+  <footer class="site-footer container">
+    <div>© <span id="year"></span> Spaletti — All rights reserved</div>
+    <div class="footer-links">
+      <a href="#privacy">Privacy</a>
+      <a href="#terms">Terms</a>
+    </div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

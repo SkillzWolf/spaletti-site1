@@ -1,0 +1,11 @@
+:root{
+  --bg:#f7f3ef;
+  --cream:#fbf8f5;
+  --accent:#8a5a38;
+  --muted:#8b8b8b;
+  --max-width:1200px;
+  --radius:10px;
+  --shadow: 0 6px 18px rgba(20,20,20,0.06);
+}
+body{margin:0;font-family:Inter;background:var(--bg);color:#222;}
+/* Full CSS from earlier would go here */
